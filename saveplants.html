@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Save Plants</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background-color: #e8f5e9;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: green;
+            color: white;
+            padding: 20px;
+        }
+
+        .content {
+            padding: 30px;
+        }
+
+        img {
+            width: 300px;
+            border-radius: 10px;
+        }
+
+        button {
+            background-color: green;
+            color: white;
+            border: none;
+            padding: 12px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+
+        button:hover {
+            background-color: darkgreen;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>🌱 Save Plants, Save Earth 🌍</h1>
+    </header>
+
+    <div class="content">
+        <img src="https://images.unsplash.com/photo-1466692476868-aef1dfb1e735?w=600" alt="Plants">
+
+        <h2>Why Save Plants?</h2>
+        <p>
+            Plants provide oxygen, food, medicine, and help keep our planet healthy.
+            Protecting plants means protecting life on Earth.
+        </p>
+
+        <button onclick="showMessage()">Take a Green Pledge</button>
+
+        <p id="message"></p>
+    </div>
+
+    <script>
+        function showMessage() {
+            document.getElementById("message").innerHTML =
+                "✅ I promise to plant more trees and protect nature!";
+        }
+    </script>
+
+</body>
+</html>
